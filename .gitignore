@@ -1,0 +1,59 @@
+# Build output
+bin/
+obj/
+out/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]uild/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio / Rider / VS Code
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.userprefs
+*.userosscache
+*.sln.docstates
+*.DotSettings.user
+
+# Rider
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+!**/packages/build/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# dotnet tools / restore
+.dotnet/
+.config/dotnet-tools.json.user
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# Local config (contains Fortnox client id / secret — never commit)
+appsettings.local.json
+appsettings.*.local.json
+
+# Test coverage / results
+[Tt]est[Rr]esult*/
+coverage*/
+*.coverage
+*.coveragexml
+
+# Publish output
+publish/
+*.pubxml.user
