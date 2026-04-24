@@ -1,4 +1,4 @@
-namespace FortnoxConsoleApp.Services;
+namespace FortnoxDataPopulator.Services;
 
 using System.Net;
 using System.Net.Sockets;
@@ -28,7 +28,7 @@ public sealed class FortnoxAuthService
 
         var appDataDir = Path.Combine(
             Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-            "FortnoxConsoleApp");
+            "FortnoxDataPopulator");
         Directory.CreateDirectory(appDataDir);
         this.tokenFilePath = Path.Combine(appDataDir, "tokens.json");
     }

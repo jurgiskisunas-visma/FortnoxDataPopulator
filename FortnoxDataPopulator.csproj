@@ -6,8 +6,8 @@
     <LangVersion>13.0</LangVersion>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>FortnoxConsoleApp</RootNamespace>
-    <AssemblyName>FortnoxConsoleApp</AssemblyName>
+    <RootNamespace>FortnoxDataPopulator</RootNamespace>
+    <AssemblyName>FortnoxDataPopulator</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

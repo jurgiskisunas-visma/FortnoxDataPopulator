@@ -1,4 +1,4 @@
-namespace FortnoxConsoleApp.Services;
+namespace FortnoxDataPopulator.Services;
 
 using System.Diagnostics;
 using System.Globalization;

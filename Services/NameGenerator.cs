@@ -1,4 +1,4 @@
-namespace FortnoxConsoleApp.Services;
+namespace FortnoxDataPopulator.Services;
 
 public static class NameGenerator
 {

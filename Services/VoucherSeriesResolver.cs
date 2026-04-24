@@ -1,4 +1,4 @@
-namespace FortnoxConsoleApp.Services;
+namespace FortnoxDataPopulator.Services;
 
 using Fortnox.SDK;
 using Fortnox.SDK.Entities;

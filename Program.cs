@@ -1,7 +1,7 @@
-namespace FortnoxConsoleApp;
+namespace FortnoxDataPopulator;
 
 using System.Globalization;
-using FortnoxConsoleApp.Services;
+using FortnoxDataPopulator.Services;
 using Microsoft.Extensions.Configuration;
 
 public static class Program
@@ -9,8 +9,8 @@ public static class Program
     public static async Task Main()
     {
         Console.OutputEncoding = System.Text.Encoding.UTF8;
-        Console.WriteLine("Fortnox Console App");
-        Console.WriteLine("===================");
+        Console.WriteLine("Fortnox Data Populator");
+        Console.WriteLine("======================");
 
         var config = new ConfigurationBuilder()
             .SetBasePath(AppContext.BaseDirectory)

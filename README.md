@@ -1,4 +1,4 @@
-# FortnoxConsoleApp
+# FortnoxDataPopulator
 
 A small .NET console tool for seeding **test customer and supplier invoices** into a [Fortnox](https://www.fortnox.se/) company via the official [Fortnox.NET.SDK](https://www.nuget.org/packages/Fortnox.NET.SDK). Useful for populating a sandbox / test company with realistic-looking data so you can exercise integrations, reports, or migrations without hand-crafting every record.
 
@@ -71,8 +71,8 @@ The committed `appsettings.json` contains placeholder values and serves as a tem
 
 After the first successful login the app stores the OAuth access + refresh token on disk so subsequent runs don't re-prompt:
 
-- **Windows:** `%LOCALAPPDATA%\FortnoxConsoleApp\tokens.json`
-- **Linux / macOS:** `~/.local/share/FortnoxConsoleApp/tokens.json`
+- **Windows:** `%LOCALAPPDATA%\FortnoxDataPopulator\tokens.json`
+- **Linux / macOS:** `~/.local/share/FortnoxDataPopulator/tokens.json`
 
 Pick `r` in the menu (or delete that file) to force a fresh browser login.
 
@@ -81,7 +81,7 @@ Pick `r` in the menu (or delete that file) to force a fresh browser login.
 ## Running
 
 ```bash
-dotnet run --project FortnoxConsoleApp.csproj
+dotnet run --project FortnoxDataPopulator.csproj
 ```
 
 On first launch the app opens your browser to Fortnox, you approve the connection against the company you want to populate, and the app captures the callback on `localhost` automatically. Then the menu appears.
@@ -89,8 +89,8 @@ On first launch the app opens your browser to Fortnox, you approve the connectio
 Example session:
 
 ```
-Fortnox Console App
-===================
+Fortnox Data Populator
+======================
 Opening browser to authorize with Fortnox...
 Authorization code received — exchanging for tokens...
 
@@ -120,9 +120,9 @@ Done: 5/5 customer invoices created, 5/5 posted, in 4.2 s.
 ## Project layout
 
 ```
-FortnoxConsoleApp/
-├── FortnoxConsoleApp.slnx          Solution (classic .sln format also works)
-├── FortnoxConsoleApp.csproj        .NET 10 exe project
+FortnoxDataPopulator/
+├── FortnoxDataPopulator.slnx          Solution (classic .sln format also works)
+├── FortnoxDataPopulator.csproj        .NET 10 exe project
 ├── Program.cs                      Entrypoint + interactive menu
 ├── appsettings.json                Committed template (placeholders only)
 ├── appsettings.local.json          Your real secrets (gitignored)
